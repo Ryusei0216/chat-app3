@@ -1,8 +1,12 @@
 <div class="wrapper">
   <div class ="side">
     <div class = "chat_name">
-      <div class = "user_name">Ryusei</div>
-      <div class = "chat_btn">チャットを作成する</div>
+      <div class = "user_name">
+        <a href="#">Ryusei</a>
+      </div>
+      <div class = "chat_btn">
+        <a href="#">チャットを作成する</a>
+      </div>
     </div>
     <div class = "chat_room_name">
       <div class = "room">techroom1</div>
@@ -21,8 +25,36 @@
     </div>
   </div>
   <div class = "main">
-    <div class = "chat_title"></div>
-    <div class = "chat_room"></div>
-    <div class = "chat_underbar"></div>
+    <div class = "chat_title">
+      <div class = "title">hogefuga</div>
+      <div class = "chat_btn_end"><a href="#">チャットを終了する</a>
+      </div>
+    </div>
+    <div class = "chat_room">
+      <div class = "chat">
+        <div class = "info">
+          <div class = "name">Ryusei</div>
+          <div class = "time">2020/3/31(Wed) 12:43:30</div>
+        </div>
+        <div class = "message">おはよう</div>
+      </div>
+      <div class = "chat">
+        <div class = "info">
+          <div class = "name">Ryusei</div>
+          <div class = "time">2020/4/1(Thu) 13:00:00</div>
+        </div>
+        <div class = "message">こんにちは</div>
+      </div>
+    </div>
+    <div class = "chat_underbar">
+      <div class ="form-input">
+        <input class="form-message" placeholder = "type a message">
+        <label class="form-image">
+        <span class="image-file">画像</span>
+        <input type="file" class="hidden">
+    </label>
+      </div>
+      <input class ="form_submit" type="submit" value="送信">
+    </div>
   </div>
 </div>
