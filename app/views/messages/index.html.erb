@@ -2,7 +2,8 @@
   <div class ="side">
     <div class = "chat_name">
       <div class = "user_name">
-        <a href="#">Ryusei</a>
+      <%# ユーザー名にリンク貼る。link_toメソッド使う%>
+        <%= link_to current_user.name, edit_user_path(current_user) %>
       </div>
       <div class = "chat_btn">
         <a href="#">チャットを作成する</a>
