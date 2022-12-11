@@ -8,6 +8,7 @@
     </div>
     <div class='account-page__inner--right user-form'>
       <%= form_with model: current_user, local: true do |f|%>
+      <%# 名前 %>
         <div class='field'>
           <div class='field-label'>
             <%= f.label :name%>
@@ -16,6 +17,7 @@
             <%= f.text_field :name, autofocus: true%>
           </div>
         </div>
+      <%# メール %>
         <div class='field'>
           <div class='field-label'>
             <%= f.label :email%>
