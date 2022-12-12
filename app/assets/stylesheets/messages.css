@@ -92,6 +92,11 @@
   overflow: scroll;
 }
 
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
 .chat{
   padding-top: 10px;
 }
