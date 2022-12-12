@@ -1,29 +1,6 @@
 <div class="wrapper">
-  <div class ="side">
-    <div class = "chat_name">
-      <div class = "user_name">
-      <%# ユーザー名にリンク貼る。link_toメソッド使う%>
-        <%= link_to current_user.name, edit_user_path(current_user) %>
-      </div>
-      <div class = "chat_btn">
-        <a href="#">チャットを作成する</a>
-      </div>
-    </div>
-    <div class = "chat_room_name">
-      <div class = "room">techroom1</div>
-      <div class = "room">techroom2</div>
-      <div class = "room">techroom3</div>
-      <div class = "room">techroom4</div>
-      <div class = "room">techroom5</div>
-      <div class = "room">techroom6</div>
-      <div class = "room">techroom7</div>
-      <div class = "room">techroom8</div>
-      <div class = "room">techroom9</div>
-      <div class = "room">techroom10</div>
-      <div class = "room">techroom11</div>
-      <div class = "room">techroom12</div>
-      <div class = "room">techroom13</div>
-    </div>
+  <div class='side'>
+    <%= render 'messages/side_bar' %>
   </div>
   <div class = "main">
     <div class = "chat_title">
