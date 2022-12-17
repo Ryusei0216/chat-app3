@@ -1,2 +1,35 @@
 <%# チャット画面 %>
-  
+  <div class = "chat_title">
+    <div class = "title">hogefuga</div>
+      <div class = "chat_btn_end"><a href="#">チャットを終了する</a>
+      </div>
+    </div>
+    <div class = "chat_room">
+      <div class = "chat">
+        <div class = "info">
+          <div class = "name">Ryusei</div>
+          <div class = "time">2020/3/31(Wed) 12:43:30</div>
+        </div>
+        <div class = "message">おはよう</div>
+      </div>
+      <div class = "chat">
+        <div class = "info">
+          <div class = "name">Ryusei</div>
+          <div class = "time">2020/4/1(Thu) 13:00:00</div>
+        </div>
+        <div class = "message">こんにちは</div>
+      </div>
+    </div>
+    <div class = "chat_underbar">
+      <%= form_with model: [@room, @message], class:"form", local: true do |f| %>
+        <div class ="form_input">
+          <%= f.text_field :content, class: "form_message", placeholder: 'type a message' %>
+          <label class="form_image">
+            <span class="image-file">画像</span>
+            <%= f.file_field :image, class: "hidden" %>
+          </label>
+        </div>
+        <%= f.submit '送信', class: "form_submit" %>
+      <% end %>
+    </div>
+  </div>
