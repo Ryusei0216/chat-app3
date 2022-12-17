@@ -5,20 +5,7 @@
       </div>
     </div>
     <div class = "chat_room">
-      <div class = "chat">
-        <div class = "info">
-          <div class = "name">Ryusei</div>
-          <div class = "time">2020/3/31(Wed) 12:43:30</div>
-        </div>
-        <div class = "message">おはよう</div>
-      </div>
-      <div class = "chat">
-        <div class = "info">
-          <div class = "name">Ryusei</div>
-          <div class = "time">2020/4/1(Thu) 13:00:00</div>
-        </div>
-        <div class = "message">こんにちは</div>
-      </div>
+     <%= render partial: 'message', collection: @messages %>
     </div>
     <div class = "chat_underbar">
       <%= form_with model: [@room, @message], class:"form", local: true do |f| %>
